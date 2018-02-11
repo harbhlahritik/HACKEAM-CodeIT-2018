@@ -11,7 +11,7 @@ When we went for the Kakrola trek, we discovered that there was a lack of a cent
 
 TECHNOLOGY USED
 --------
-* **Html ,css** , javascript (backend we used embedded js - ejs)
+* **Frontend** -Html ,css , javascript (backend we used embedded js - ejs)
 * **Bootstrap 3** – Makes our website responsive
 * **Node.js** – Backbone of our Backend applications. Using Express.
 * **Bcrypt (npm package)** – for Authenticating new users.
