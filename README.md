@@ -1,7 +1,7 @@
 # HACKEAM-2018
 ## MedRep
 
-![alt text](https://github.com/harbhlahritik/HACKEAM-2018/blob/master/src/common/images/logogithub.png "Logo")
+![alt text](https://github.com/harbhlahritik/HACKEAM-2018/blob/master/src/common/images/MedRep.png "Logo")
 
 Solution of team CodeIT for the HACKEAM-2018 event held on 10-02-18
 -------------------------------------------------------------------
