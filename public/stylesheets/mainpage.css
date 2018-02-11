@@ -1,0 +1,87 @@
+      .com{
+        width: 50%;
+        float: left;
+        margin-right: 5%;
+
+    }
+
+    .com1{
+        width: 40%;
+        float: right;
+    }
+
+
+
+    .logoText {
+     
+        font-size: 1.8vw;
+        font-family: 'Fira Sans', sans-serif;
+        font-style: normal;
+        color: whitesmoke;
+                
+    }
+    
+    .logo {
+        
+        width: 80%;
+        height : auto;
+        margin-bottom: 5%;
+    }
+    
+    .userButton {
+        
+        background-color: #348e37;
+        border: none;
+        color:whitesmoke;
+        padding: 5% 5% 5% 5%;
+        height: auto;
+        width: 45%;
+        
+        font-size: 2.5vw !important;
+        font-family: 'Alegreya Sans', sans-serif;
+        
+        border-radius: 10px;
+        margin-top: 6%;
+        
+        transition: transform 0.2s;        
+        text-align: center;
+        
+        cursor: pointer;
+    }
+    
+    .userButton:hover {
+        
+        transform: scale(1.09);
+    }
+    
+    button:focus {
+        
+        outline-style: none;
+    }
+
+    .textLarge {
+
+        width: 100%; 
+        margin: 1% 5% 0% 8%;
+    }
+
+    @media only screen and (max-width: 400px) {
+    
+      .com{
+        width: 100%;
+    }
+
+    .com1{
+        width: 100%;
+    }
+
+    .text {
+
+        width: 80%;
+        font-size: 2vw;
+        margin: 1% 5% 0% 8%;
+        margin-right: 15%;
+    }
+    
+
+  }

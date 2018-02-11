@@ -1,0 +1,55 @@
+<head>
+
+    <title> MedRep for Consumer </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/UserLogin.css">
+
+</head>
+
+<html>
+
+<body style="background-image: url(../images/User_Login.jpg)">
+
+<div class = "main">
+
+    <div class = "container-fluid textDiv">
+
+        <!-- Add link of main homepage in the image -->
+        <a href = "/">
+            <img class = "logo " style = "width: 100% " src = "../images/MedRep1.png" alt = "Logo Here">
+        </a>
+
+        <p class = "subHeading" style = " margin-bottom: 5% "> A unique Aadhaar based Medical Repository for all your Reports and Tests, </p>
+        <p class = "subHeading" style = " margin-bottom: 10% "> Unparalleled and Powerful Tool for saving your Medical History online.</p>
+
+
+    </div>
+    <div class = "container-fluid login">
+
+        <form action = "/users/login" method = "post">
+
+            <input class="inputText" type = "text" name="logusername" placeholder = "Aadhaar Card Number"  required onkeydown="return ( event.ctrlKey || event.altKey
+                    || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false)
+                    || (95<event.keyCode && event.keyCode<106)
+                    || (event.keyCode==8) || (event.keyCode==9)
+                    || (event.keyCode>34 && event.keyCode<40)
+                    || (event.keyCode==46) )" pattern=".{12,12}">
+            <input class="inputText" type = "password" name="logpassword" style = "margin-top: 6%" placeholder = "Password" required>
+
+            <button type = "submit" class="buttonDesign"> Login </button>
+            <!-- Add link of next page in login-->
+
+        </form>
+
+        <!-- Add the sign up POP UP here -->
+        <a href="/users/signup">
+            <button type = "submit" class="buttonDesign" id="myBtn">Sign ~ Up</button>
+        </a>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<head>
+
+    <title> Welcome - User </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/afteruserlogin.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<html>
+<body style="background-image: url(../images/After_User_Login.jpg)">
+    <header class = "header">
+
+        <div>
+
+            <a href = "/">
+                <img class = "img-responsive logo dropdown" src="../images/MedRep1.png" alt="Logo">
+            </a>
+
+            <a href = "/users/logout">
+                <button class="logout" type="submit">Logout</button>
+            </a>
+
+            <img class = "userLogo" src = "../images/userIcon.png">
+
+            <div style =" float: right; margin: 4% 3% 0% 0%" class="popup" onclick="myFunction()">
+                <h1 class="headerName"><%= name %></h1>
+                <span class="popuptext" id="myPopup">
+                  Aadhaar Number : <%= aadhaar %><br>
+                  Mobile Number : <%= mobile %><br>
+                  Email : <%= email %><br>
+                  Number of Reports in Account : <%= image.length %><br>
+                </span>
+            </div>
+
+        </div>
+
+    </header>
+
+    <hr>
+<!---------------------------------------------------------------------------------------------------------------->
+    <div align = "center">
+    <h1 class="reportName" style= "margin-top: 5%; font-size: 250%;"> Medical History </h1>
+    </div>
+
+    <div style = "margin-top: 5%; width: 100%" align = "center">
+
+        <table align = "center" style="width: 90%">
+
+          <% for(var i=0; i < image.length; i++) { %>
+            <tr>
+              <td><h1 class="reportName"><%= image[i].originalname %></h1></td>
+              <td><h1 class="reportName"><%= image[i].labname %></h1></td>
+              <td><h1 class="reportName"><%= image[i].date %></h1></td>
+              <td><a href = "/users/afteruserlogin/images/<%= image[i]._id %>" download><img src="/images/Download_Report.png"></a></td>
+            </tr>
+          <% } %>
+
+            <!-- <tr>
+                <td><h1 class="reportName" style="font-size: 2.5vw">Report Name</h1></td>
+                <td><h1 class="reportName" style="font-size: 2.5vw">Lab Name</h1></td>
+                <td><h1 class="reportName" style="font-size: 2.5vw">Date of Upload</h1></td>
+            </tr>
+          -->
+            <!-- PUT LOOP FOR BACK END HERE ------------>
+
+            <!-- <tr>
+                <td><h1 class="reportName">Report 1</h1></td>
+                <td><h1 class="reportName">Dr. Lal PathLab</h1></td>
+                <td><h1 class="reportName">2/07/2018</h1></td>
+                <td><a href = "#" download><img class="img-responsive" src="Download_Report.png"></a></td>
+
+            </tr>
+             <tr>
+                <td><h1 class="reportName">Report 1</h1></td>
+                <td><h1 class="reportName">Dr. Lal PathLab</h1></td>
+                <td><h1 class="reportName">2/07/2018</h1></td>
+                <td><a href = "#" download><img class="img-responsive" src="Download_Report.png"></a></td>
+            </tr> -->
+
+        </table>
+
+
+    </div>
+
+
+</body>
+</html>
+
+
+
+<script>
+// When the user clicks on <div>, open the popup
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+}
+</script>

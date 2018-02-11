@@ -1,0 +1,75 @@
+<head>
+
+    <title> MedRep for Labs</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/LabLogin.css">
+
+</head>
+
+<html>
+
+<body style="background-image: url(../images/Labs_Login.jpg)">
+
+    <div class = "main">
+
+        <div class = "container-fluid textDiv">
+
+            <!-- Add link of main homepage in the image -->
+            <a href = "/">
+                <img class = "logo " style = "width: 100% " src = "../images/MedRep1.png" alt = "Logo Here">
+            </a>
+
+            <p class = "subHeading" style = " margin-bottom: 5% "> A unique Aadhaar based Medical Repository for all your Reports and Tests, </p>
+            <p class = "subHeading" style = " margin-bottom: 10% ">Provides the Labs with Online Support to help their Users get Reports everywhere</p>
+
+
+        </div>
+        <div class = "container-fluid login">
+
+            <form action = "/labs/login" method = "post">
+
+                <input name = "loglabname" class="inputText" type = "text" placeholder = "License Number  (no spaces)" required>
+                <input name = "logpassword" class="inputText" type = "password" style = "margin-top: 6%" placeholder = "Password" required>
+
+                  <button type = "submit" class="buttonDesign"> Login </button>
+
+            </form>
+
+
+    <!-- Add the sign up POP UP here -->
+    <a href="/labs/signuplab">
+        <button type = "submit" class="buttonDesign" id="myBtn">Sign ~ Up</button>
+    </a>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+<!----------------------------------------------------------------------------------------------------------->
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>

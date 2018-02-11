@@ -1,0 +1,115 @@
+    
+    .login {
+
+        height: auto;
+        width: 100%;
+    
+        text-align: center;
+    }
+    
+    .logo {
+           
+        margin: 3% 0% 1% 7%;
+        width : 42%;
+        height : auto;
+        
+        text-align: center;
+    }
+    
+    .inputText
+    {
+        width: 30% !important;
+        height: 7% !important;
+        
+        font-family: 'Alegreya Sans', sans-serif !important;
+        font-size: 160%;
+        color: whitesmoke !important;
+        
+        background: none !important;
+        border-width: 0 !important;
+        border-bottom-width: medium !important;
+        border-color: #33963b !important;   
+        margin-bottom: 1%;
+                
+    }
+
+    input:focus{
+        
+        outline: none !important;
+    }
+
+    .buttonDesign{
+        
+        margin-top: 3%;
+        text-align: center;
+        width: auto;
+        height: 5%;
+        
+        background : none;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 180%;
+        color: whitesmoke;
+        
+        border: none;
+        border-radius: 5%;
+        
+        cursor:pointer;
+        
+        transition: transform .2s; /* Animation */
+    }
+    
+    button:focus{
+        
+        outline: none;
+    }
+    
+    .buttonDesign:hover {
+        
+        transform: scale(1.25);
+    } 
+    
+    input[type='file'] {
+        
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 100%;
+        color: whitesmoke;
+        cursor:pointer;
+        margin-left: 2%;
+        text-align: center;
+        
+        transition: transform .2s; /* Animation */
+        margin-top: 2%;
+    }
+    
+    input[type='file']:hover {
+        
+        transform: scale(1.1);
+    }
+    
+    .browse {
+        
+        opacity: 0;
+    }
+    
+    input[type=date]::-webkit-inner-spin-button {
+        
+    -webkit-appearance: none;
+}
+
+ .buttonD{
+        
+        text-align: center;
+        width: auto;
+        height: 5%;
+        
+        background: none;
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 180%;
+        color: whitesmoke;
+        
+        border: none;
+        border-radius: 5%;
+        
+        cursor:pointer;
+
+    }

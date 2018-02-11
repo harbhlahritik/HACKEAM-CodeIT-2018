@@ -1,0 +1,81 @@
+<script>
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+ if(dd<10){
+        dd='0'+dd
+    }
+    if(mm<10){
+        mm='0'+mm
+    }
+
+today = yyyy+'-'+mm+'-'+dd;
+document.getElementById("datefield").setAttribute("max", today);
+
+</script>
+
+<head>
+
+    <title> Welcome - Lab </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/afterlablogin.css">
+
+</head>
+
+<html>
+
+    <header>
+        <a href="/labs/logout">
+        <button class="buttonD" style="font-size: 2vw; float: right">Logout</button>
+        </a>
+    </header>
+
+<body style = "background-image: url(../images/After_Lab_Login.jpg)">
+
+    <div class = "main">
+
+        <div class = "container-fluid login">
+
+            <a href = "/">
+                <img class = "logo" src = "../images/MedRep1.png" alt = "Logo Here">
+            </a>
+
+            <form action "/labs/afterlablogin" method="POST" enctype="multipart/form-data">
+
+                <div align = "center">
+                <input name = "uploaded_aadhaar_file" class = "inputText" type="text" placeholder="Aadhaar Number of Consumer" required onkeypress="return event.charCode > 47 && event.charCode < 58;" pattern="[0-9]+" maxlength="12" minlength=12>
+                </div>
+
+                <div align = "center">
+                <input name = "labname" class="inputText" style = "font-size: 160%" type = "text" placeholder = "Lab Name" required>
+                </div>
+
+                <div align = "center">
+                <input name = "reportName" class="inputText" style = "font-size: 160%" type = "text" placeholder = "Report Name" required>
+                </div>
+
+                <div align = "center">
+                <input name = "date" class="inputText" style = "font-size: 160%" type = "date" required min="1980-01-01"
+                 max="2018-02-11">
+                </div>
+
+                <div align = "center">
+                <label for="file" class= "browse">Browse</label>
+                <input type="file" id="file" name="file" multiple required>
+                </div>
+
+                <div align = "center">
+                <button type = "submit" class="buttonDesign"> Upload to Server </button>
+                </div>
+
+            </form>
+
+
+    </div>
+    </div>
+
+</body>
+</html>

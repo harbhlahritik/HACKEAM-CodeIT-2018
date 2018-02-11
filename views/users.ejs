@@ -1,0 +1,64 @@
+<head>
+
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Fira+Sans" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/userlogin.css">
+    <title> MedRep - Personal </title>
+
+</head>
+
+<body style = "background-image:url(../images/User_Login.jpg)">
+
+
+    <div class="textMain container-fluid">
+        <div class="com">
+        <div style="width: 100%; margin: 20% 0% 0% 8%">
+            <a href="/">
+            <img class ="logo img-responsive" src="../images/MedRep1.png" alt="Our Logo">
+            </a>
+        </div>
+
+        <div class="textLarge">
+
+            <div class="text">
+            <h1 class = "logoText">A unique Online Repository, for both Consumers and Laboratories, providing a Central Database for all your Medical Reports and Tests.</h1>
+            <h1 class = "logoText" style="margin-top: 5%">A Cross-Platform tool to provide universal usability and extended adaptibility. </h1>
+           </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="login container-fluid" >
+        <div class="com1">
+
+        <form action="/users/login" method="post">
+
+        <div align="center" style="margin-top: 40%">
+
+        <input name = "logusername" class = "inputUser" type="text" placeholder="Aadhaar Number" required onkeypress="return event.charCode > 47 && event.charCode < 58;" pattern="[0-9]+" maxlength="12" minlength=12>
+        <br>
+
+        <input name = "logpassword" class = "inputUser" type="password" style="margin-bottom: 6%" placeholder="Password" required>
+        <br>
+
+        <!-- <a href="#">
+        <button type="button" class="userButton" style="font-size: 1vw">FORGOT PASSWORD ?</button>
+        </a>
+        <hr style="width:25%; margin-top: -3%">
+        <br> -->
+
+        <button type = "submit" class="userButton" >Login</button>
+        <br>
+
+        <a href="/users/signup">
+        <button type="button" class="userButton" style="font-size: 2vw">Sign-Up</button>
+        </a>
+        <br>
+            
+        </div>
+        </form>
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,105 @@
+    .com{
+        width: 50%;
+        float: left;
+        margin-right: 5%;
+
+    }
+
+    .com1{
+        width: 40%;
+        float: right;
+    }
+
+    .logoText {
+     
+        font-size: 1.5vw;
+        font-family: 'Fira Sans', sans-serif;
+        font-style: normal;
+        color: whitesmoke;
+                
+    }
+    
+    .logo {
+        
+        width: 80%;
+        height : auto;
+        margin-bottom: 5%;
+        
+        cursor: pointer;
+    }
+    
+    
+    input {
+
+        background : none;
+        color: whitesmoke;
+        border-color: #4f9152;
+        font-family: 'Fira Sans', sans-serif;
+        
+        font-size: 2vw;
+        margin-bottom: 3%;
+        border-left: 0;
+        border-right: 0;
+        border-top: 0;
+        border-width: 3px !important;
+    }
+
+    .userButton {
+        
+        background : none;
+        color: whitesmoke;
+        border: none;
+        border-bottom: 10%;
+        font-family: 'Fira Sans', sans-serif;
+        
+        font-size: 1.9vw;
+        margin-bottom: 4%;
+        
+        transition: 0.2s;
+        
+        cursor: pointer;
+    }
+    
+    .userButton:hover {
+        
+        transform: scale(1.4);
+    }
+    
+    input:focus {
+        
+        outline-style: none;
+    }
+    
+    button:focus {
+        
+        outline-style: none;
+    }
+
+    .textLarge {
+
+        width: 100%; 
+        margin: 1% 5% 0% 8%;
+    }
+
+
+@media only screen and (max-width: 400px) {
+    
+      .com{
+        width: 100%;
+    }
+
+    .com1{
+        width: 100%;
+    }
+
+    .text {
+
+        width: 80%;
+        font-size: 2vw;
+        margin: 1% 5% 0% 8%;
+        margin-left: 3%;
+        text-align: center;
+    }
+    
+
+  }
