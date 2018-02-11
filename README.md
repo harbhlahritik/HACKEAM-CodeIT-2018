@@ -1,7 +1,7 @@
 # HACKEAM-2018
 ## MedRep
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/logogithub.png "Logo")
+![alt text](https://github.com/harbhlahritik/HACKEAM-2018/raw/master/src/common/images/logogithub.png "Logo")
 
 Solution of team CodeIT for the HACKEAM-2018 event held on 10-02-18
 -------------------------------------------------------------------
@@ -20,7 +20,7 @@ TECHNOLOGY USED
 * **Multer (npm package)** – Creates a local repository where files are saved , however it poses a restriction of only 16MB data for BSON files. Therefore, the platform would later change to GridFS system during the time of hosting.
 * **Aadhaar API** – Provides our application with all the data for its successful function. It provides the Name, Mobile and email for a particular Aadhaar possessing individual.(Current implementation not feasible as API key is only being provided to registered Entreprises).
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/8049.png "FlowChart")
+![alt text](https://github.com/harbhlahritik/HACKEAM-2018/raw/master/src/common/images/8049.png "FlowChart")
 
 WHY AADHAAR ?
 --------
