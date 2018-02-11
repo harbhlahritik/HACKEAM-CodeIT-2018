@@ -1,4 +1,4 @@
-# HACKEAM-2018
+# HACKEAM-CodeIT-2018
 ## MedRep
 
 ![alt text](https://github.com/harbhlahritik/HACKEAM-2018/blob/master/src/common/images/MedRep.png "Logo")
