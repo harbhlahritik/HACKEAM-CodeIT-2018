@@ -1,6 +1,8 @@
 # HACKEAM-2018
 ## MedRep
 
+![alt text](https://github.com/harbhlahritik/HACKEAM-2018/blob/master/src/common/images/logogithub.png "Logo")
+
 Solution of team CodeIT for the HACKEAM-2018 event held on 10-02-18
 -------------------------------------------------------------------
 
@@ -17,6 +19,8 @@ TECHNOLOGY USED
 * **MongoDB** – We went forward to use a noSQL database like MongoDB. Our project has 4 schemas – one which keeps track of User data, one for the Labs , a separate schema for handling the uploaded files and lastly the express-middleware sessions schema.
 * **Multer (npm package)** – Creates a local repository where files are saved , however it poses a restriction of only 16MB data for BSON files. Therefore, the platform would later change to GridFS system during the time of hosting.
 * **Aadhaar API** – Provides our application with all the data for its successful function. It provides the Name, Mobile and email for a particular Aadhaar possessing individual.(Current implementation not feasible as API key is only being provided to registered Entreprises).
+
+![alt text](https://github.com/harbhlahritik/HACKEAM-2018/blob/master/src/common/images/8049.png "FlowChart")
 
 WHY AADHAAR ?
 --------
