@@ -54,3 +54,11 @@ CONCLUSION
 ------
 
 Our product MedRep falls in line with the governments plans to have  totally unique identity that can be used for various applications in the near future. The product benefits both the entities involved Users and Labs. Later addition of features such as medical insurance integration , government subsidy, etc. also become much easier thereby making the system highly flexible. This makes it easier to have a unified system in India just like Social Security Number used other countries.
+
+HOW TO RUN THE CODE
+-------
+* Save the code locally in your computer
+* Install Node.js
+* Install MongoDB and add it to your PATH
+* Start cmd/Terminal Shell 1 and run `mongod`
+* In shell 2 go to the directory of the project in your local computer and run `npm install` followed by `nodemon start`
